@@ -12,16 +12,16 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 	public class MemberController: ApiController
 	{
 
-	  MemberController sadf = new MemberController;
+	  MemberController sdafd = new MemberController;
 
 		[HttpGet]  
-		[Route("api/sadf/GetMemberAuthorization")] 
+		[Route("api/sdafd/GetMemberAuthorization")] 
 		public MemberAuthorizationResponse GetMemberAuthorization(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberAuthorization(memberRequest); 
+				return sdafd.GetMemberAuthorization(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -31,13 +31,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberEnrollment")] 
+		[Route("api/sdafd/GetMemberEnrollment")] 
 		public MemberEnrollmentResponse GetMemberEnrollment(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberEnrollment(memberRequest); 
+				return sdafd.GetMemberEnrollment(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -47,13 +47,29 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberPcp")] 
+		[Route("api/sdafd/GetMemberEnrollment")] 
+		public MemberEnrollmentResponse GetMemberEnrollment(MemberRequest memberRequest, String testing) 
+		{ 
+ 
+			try 
+			{  
+				return sdafd.GetMemberEnrollment(memberRequest, testing); 
+			} catch (Exception ex)
+			 {
+				 throw ex;
+			 }
+ 
+			return  null;
+		}
+ 
+		[HttpGet]  
+		[Route("api/sdafd/GetMemberPcp")] 
 		public MemberPcpResponse GetMemberPcp(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberPcp(memberRequest); 
+				return sdafd.GetMemberPcp(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -63,13 +79,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberMemo")] 
+		[Route("api/sdafd/GetMemberMemo")] 
 		public MemberMemoResponse GetMemberMemo(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberMemo(memberRequest); 
+				return sdafd.GetMemberMemo(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -79,13 +95,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberClaims")] 
+		[Route("api/sdafd/GetMemberClaims")] 
 		public MemberClaimResponse GetMemberClaims(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberClaims(memberRequest); 
+				return sdafd.GetMemberClaims(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -95,13 +111,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpPut]  
-		[Route("api/sadf/UpdateQNXTMailingAddress")] 
+		[Route("api/sdafd/UpdateQNXTMailingAddress")] 
 		public MemberQNXTMailingAddressUpdateResponse UpdateQNXTMailingAddress(MemberQNXTMailingAddressUpdateRequest memberQNXTMailingAddrUpdateRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
+				return sdafd.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -111,13 +127,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetEnrollRestriction")] 
+		[Route("api/sdafd/GetEnrollRestriction")] 
 		public EnrollRestrictionResponse GetEnrollRestriction(EnrollRestrictionRequest enrollRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetEnrollRestriction(enrollRequest); 
+				return sdafd.GetEnrollRestriction(enrollRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -127,13 +143,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetRateCode")] 
+		[Route("api/sdafd/GetRateCode")] 
 		public RateCodeResponse GetRateCode(RateCodeRequest memberRateRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetRateCode(memberRateRequest); 
+				return sdafd.GetRateCode(memberRateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -143,13 +159,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetAttribute")] 
+		[Route("api/sdafd/GetAttribute")] 
 		public AttributeResponse GetAttribute(AttributeRequest memberAttributeRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetAttribute(memberAttributeRequest); 
+				return sdafd.GetAttribute(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -159,13 +175,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetPlanAction")] 
+		[Route("api/sdafd/GetPlanAction")] 
 		public MemberPlanActionResponse GetPlanAction(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetPlanAction(memberRequest); 
+				return sdafd.GetPlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -175,13 +191,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpDelete]  
-		[Route("api/sadf/DeletePlanAction")] 
+		[Route("api/sdafd/DeletePlanAction")] 
 		public MemberPlanActionResponse DeletePlanAction(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.DeletePlanAction(memberRequest); 
+				return sdafd.DeletePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -191,13 +207,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpPost]  
-		[Route("api/sadf/CreatePlanAction")] 
+		[Route("api/sdafd/CreatePlanAction")] 
 		public MemberPlanActionResponse CreatePlanAction(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.CreatePlanAction(memberRequest); 
+				return sdafd.CreatePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -207,13 +223,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberMemoAlertIndicator")] 
+		[Route("api/sdafd/GetMemberMemoAlertIndicator")] 
 		public MemoAlertIndicatorResponse GetMemberMemoAlertIndicator(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberMemoAlertIndicator(memberRequest); 
+				return sdafd.GetMemberMemoAlertIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -223,13 +239,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberMemoHedisIndicator")] 
+		[Route("api/sdafd/GetMemberMemoHedisIndicator")] 
 		public MemoAlertIndicatorResponse GetMemberMemoHedisIndicator(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberMemoHedisIndicator(memberRequest); 
+				return sdafd.GetMemberMemoHedisIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -239,13 +255,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberPrimaryPCP")] 
+		[Route("api/sdafd/GetMemberPrimaryPCP")] 
 		public PrimaryPCPReponse GetMemberPrimaryPCP(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberPrimaryPCP(memberRequest); 
+				return sdafd.GetMemberPrimaryPCP(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -255,13 +271,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberProfileSummary")] 
+		[Route("api/sdafd/GetMemberProfileSummary")] 
 		public MemberProfileSummaryResponse GetMemberProfileSummary(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberProfileSummary(memberRequest); 
+				return sdafd.GetMemberProfileSummary(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -271,13 +287,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberAgencyName")] 
+		[Route("api/sdafd/GetMemberAgencyName")] 
 		public MemberAgencyNameResponse GetMemberAgencyName(MemberAgencyNameRequest AgencyNameRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberAgencyName(AgencyNameRequest); 
+				return sdafd.GetMemberAgencyName(AgencyNameRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -287,13 +303,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberShareOfCost")] 
+		[Route("api/sdafd/GetMemberShareOfCost")] 
 		public ShareOfCostReponse GetMemberShareOfCost(ShareOfCostRequest costRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberShareOfCost(costRequest); 
+				return sdafd.GetMemberShareOfCost(costRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -303,13 +319,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberBasicUMDetails")] 
+		[Route("api/sdafd/GetMemberBasicUMDetails")] 
 		public UMBasicResponse GetMemberBasicUMDetails(UMDocRequest UMDocRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberBasicUMDetails(UMDocRequest); 
+				return sdafd.GetMemberBasicUMDetails(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -319,13 +335,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetUMDiagsAndServices")] 
+		[Route("api/sdafd/GetUMDiagsAndServices")] 
 		public UMDiagsAndServicesResponse GetUMDiagsAndServices(UMDocRequest UMDocRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetUMDiagsAndServices(UMDocRequest); 
+				return sdafd.GetUMDiagsAndServices(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -335,13 +351,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetUMAttributes")] 
+		[Route("api/sdafd/GetUMAttributes")] 
 		public AttributeDetailsResponse GetUMAttributes(UMDocRequest memberAttributeRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetUMAttributes(memberAttributeRequest); 
+				return sdafd.GetUMAttributes(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -351,13 +367,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetHedisAlert")] 
+		[Route("api/sdafd/GetHedisAlert")] 
 		public HedisAlertResponse GetHedisAlert(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetHedisAlert(memberRequest); 
+				return sdafd.GetHedisAlert(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -367,13 +383,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetIdCardCompletionDate")] 
+		[Route("api/sdafd/GetIdCardCompletionDate")] 
 		public IdCardCompletionResponse GetIdCardCompletionDate(MemberRequest memberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetIdCardCompletionDate(memberRequest); 
+				return sdafd.GetIdCardCompletionDate(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -383,13 +399,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetHistoricalAddress")] 
+		[Route("api/sdafd/GetHistoricalAddress")] 
 		public HistoricalAddressResponse GetHistoricalAddress(HistoricalAddressRequest HistoricalAddressRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetHistoricalAddress(HistoricalAddressRequest); 
+				return sdafd.GetHistoricalAddress(HistoricalAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -399,13 +415,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMarketplaceDetail")] 
+		[Route("api/sdafd/GetMarketplaceDetail")] 
 		public MarketPlaceResponse GetMarketplaceDetail(MarketPlaceRequest MarketPlaceRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMarketplaceDetail(MarketPlaceRequest); 
+				return sdafd.GetMarketplaceDetail(MarketPlaceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -415,13 +431,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetAccountStatus")] 
+		[Route("api/sdafd/GetAccountStatus")] 
 		public AccountStatusResponse GetAccountStatus(AccountStatusRequest AccountStatusRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetAccountStatus(AccountStatusRequest); 
+				return sdafd.GetAccountStatus(AccountStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -431,13 +447,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetBenefitPlan")] 
+		[Route("api/sdafd/GetBenefitPlan")] 
 		public BenefitPlanResponse GetBenefitPlan(BenefitPlanRequest benefitPlanRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetBenefitPlan(benefitPlanRequest); 
+				return sdafd.GetBenefitPlan(benefitPlanRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -447,13 +463,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetBenefitPlanAccumulation")] 
+		[Route("api/sdafd/GetBenefitPlanAccumulation")] 
 		public BenefitPlanAccumulationResponse GetBenefitPlanAccumulation(BenefitPlanAccumulationRequest benefitPlanAccumulationRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
+				return sdafd.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -463,13 +479,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetAssociatedMembers")] 
+		[Route("api/sdafd/GetAssociatedMembers")] 
 		public AssociatedMembersResponse GetAssociatedMembers(AssociatedMembersRequest associatedMemberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetAssociatedMembers(associatedMemberRequest); 
+				return sdafd.GetAssociatedMembers(associatedMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -479,13 +495,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetProfileSummary")] 
+		[Route("api/sdafd/GetProfileSummary")] 
 		public ProfileSummaryResponse GetProfileSummary(ProfileSummaryRequest profileSummaryRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetProfileSummary(profileSummaryRequest); 
+				return sdafd.GetProfileSummary(profileSummaryRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -495,13 +511,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetPrimaryEnrollment")] 
+		[Route("api/sdafd/GetPrimaryEnrollment")] 
 		public PrimaryEnrollmentResponse GetPrimaryEnrollment(PrimaryEnrollmentRequest primaryEnrollmentRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetPrimaryEnrollment(primaryEnrollmentRequest); 
+				return sdafd.GetPrimaryEnrollment(primaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -511,13 +527,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetSecondaryEnrollment")] 
+		[Route("api/sdafd/GetSecondaryEnrollment")] 
 		public SecondaryEnrollmentResponse GetSecondaryEnrollment(SecondaryEnrollmentRequest SecondaryEnrollmentRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
+				return sdafd.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -527,13 +543,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetCOBDetails")] 
+		[Route("api/sdafd/GetCOBDetails")] 
 		public COBDetailsResponse GetCOBDetails(COBDetailsRequest cobDetailsRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetCOBDetails(cobDetailsRequest); 
+				return sdafd.GetCOBDetails(cobDetailsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -543,13 +559,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetEnrollPlanActions")] 
+		[Route("api/sdafd/GetEnrollPlanActions")] 
 		public EnrollPlanActionsResponse GetEnrollPlanActions(EnrollPlanActionsRequest enrollPlanActionsRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetEnrollPlanActions(enrollPlanActionsRequest); 
+				return sdafd.GetEnrollPlanActions(enrollPlanActionsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -559,13 +575,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/SearchMember")] 
+		[Route("api/sdafd/SearchMember")] 
 		public MemberSearchResponse SearchMember(SearchMemberRequest searchMemberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.SearchMember(searchMemberRequest); 
+				return sdafd.SearchMember(searchMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -575,13 +591,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/SearchPreEnrolledMember")] 
+		[Route("api/sdafd/SearchPreEnrolledMember")] 
 		public SearchPreEnrolledMemberResponse SearchPreEnrolledMember(SearchPreEnrolledMemberRequest searchPreEnrolledMemberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
+				return sdafd.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -591,13 +607,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetPreEnrolledMemberDetail")] 
+		[Route("api/sdafd/GetPreEnrolledMemberDetail")] 
 		public PreEnrolledMemberDetailResponse GetPreEnrolledMemberDetail(PreEnrolledMemberDetailRequest searchPreEnrolledMemberRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
+				return sdafd.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -607,13 +623,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetResendStatus")] 
+		[Route("api/sdafd/GetResendStatus")] 
 		public ResendStatusResponse GetResendStatus(ResendStatusRequest resendStatusRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetResendStatus(resendStatusRequest); 
+				return sdafd.GetResendStatus(resendStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -623,13 +639,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetMemberInvoice")] 
+		[Route("api/sdafd/GetMemberInvoice")] 
 		public MemberInvoiceResponse GetMemberInvoice(MarketPlaceRequest request) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetMemberInvoice(request); 
+				return sdafd.GetMemberInvoice(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -639,13 +655,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetClaimExplanationOfBenefits")] 
+		[Route("api/sdafd/GetClaimExplanationOfBenefits")] 
 		public EOBPDFDetailResponse GetClaimExplanationOfBenefits(EOBPDFDetailRequest request) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetClaimExplanationOfBenefits(request); 
+				return sdafd.GetClaimExplanationOfBenefits(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -655,13 +671,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetResponsiblePartyAddress")] 
+		[Route("api/sdafd/GetResponsiblePartyAddress")] 
 		public ResponsiblePartyAddressResponse GetResponsiblePartyAddress(ResponsiblePartyAddressRequest responsiblePartyAddressRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
+				return sdafd.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -671,13 +687,13 @@ namespace namespace Molina.EnterpriseService.ServiceLayer
 		}
  
 		[HttpGet]  
-		[Route("api/sadf/GetClaimDetails")] 
+		[Route("api/sdafd/GetClaimDetails")] 
 		public QNXTClaimSvc.GetClaimDetailResp GetClaimDetails(ClaimsServiceRequest claimServiceRequest) 
 		{ 
  
 			try 
 			{  
-				return sadf.GetClaimDetails(claimServiceRequest); 
+				return sdafd.GetClaimDetails(claimServiceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
