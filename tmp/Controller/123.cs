@@ -34,12 +34,30 @@ using System.Text;
 using Molina.EnterpriseService.Cache;
 using System.ServiceModel.Web;
 using Molina.EnterpriseService.BusinessLayer;
-namespace dsf
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+using Molina.EnterpriseService.Cache;
+using System.ServiceModel.Web;
+using Molina.EnterpriseService.BusinessLayer;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+using Molina.EnterpriseService.Cache;
+using System.ServiceModel.Web;
+using Molina.EnterpriseService.BusinessLayer;
+namespace sdfg
 {
 	public class 123: ApiController
 	{
 
-	  sdaf dsffd = new sdaf();
+	  dfsg dfsg = new dfsg();
 
 		[HttpGet]  
 		[Route("api/123/GetMemberAuthorization")] 
@@ -48,7 +66,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberAuthorization(memberRequest); 
+				return dfsg.GetMemberAuthorization(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -64,7 +82,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberEnrollment(memberRequest); 
+				return dfsg.GetMemberEnrollment(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -80,7 +98,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberEnrollment(memberRequest, testing); 
+				return dfsg.GetMemberEnrollment(memberRequest, testing); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -96,7 +114,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberPcp(memberRequest); 
+				return dfsg.GetMemberPcp(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -112,7 +130,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemo(memberRequest); 
+				return dfsg.GetMemberMemo(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -128,7 +146,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberClaims(memberRequest); 
+				return dfsg.GetMemberClaims(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -144,7 +162,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
+				return dfsg.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -160,7 +178,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetEnrollRestriction(enrollRequest); 
+				return dfsg.GetEnrollRestriction(enrollRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -176,7 +194,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetRateCode(memberRateRequest); 
+				return dfsg.GetRateCode(memberRateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -192,7 +210,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAttribute(memberAttributeRequest); 
+				return dfsg.GetAttribute(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -208,7 +226,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPlanAction(memberRequest); 
+				return dfsg.GetPlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -224,7 +242,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.DeletePlanAction(memberRequest); 
+				return dfsg.DeletePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -240,7 +258,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.CreatePlanAction(memberRequest); 
+				return dfsg.CreatePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -256,7 +274,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemoAlertIndicator(memberRequest); 
+				return dfsg.GetMemberMemoAlertIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -272,7 +290,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemoHedisIndicator(memberRequest); 
+				return dfsg.GetMemberMemoHedisIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -288,7 +306,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberPrimaryPCP(memberRequest); 
+				return dfsg.GetMemberPrimaryPCP(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -304,7 +322,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberProfileSummary(memberRequest); 
+				return dfsg.GetMemberProfileSummary(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -320,7 +338,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberAgencyName(AgencyNameRequest); 
+				return dfsg.GetMemberAgencyName(AgencyNameRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -336,7 +354,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberShareOfCost(costRequest); 
+				return dfsg.GetMemberShareOfCost(costRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -352,7 +370,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberBasicUMDetails(UMDocRequest); 
+				return dfsg.GetMemberBasicUMDetails(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -368,7 +386,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetUMDiagsAndServices(UMDocRequest); 
+				return dfsg.GetUMDiagsAndServices(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -384,7 +402,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetUMAttributes(memberAttributeRequest); 
+				return dfsg.GetUMAttributes(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -400,7 +418,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetHedisAlert(memberRequest); 
+				return dfsg.GetHedisAlert(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -416,7 +434,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetIdCardCompletionDate(memberRequest); 
+				return dfsg.GetIdCardCompletionDate(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -432,7 +450,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetHistoricalAddress(HistoricalAddressRequest); 
+				return dfsg.GetHistoricalAddress(HistoricalAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -448,7 +466,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMarketplaceDetail(MarketPlaceRequest); 
+				return dfsg.GetMarketplaceDetail(MarketPlaceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -464,7 +482,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAccountStatus(AccountStatusRequest); 
+				return dfsg.GetAccountStatus(AccountStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -480,7 +498,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetBenefitPlan(benefitPlanRequest); 
+				return dfsg.GetBenefitPlan(benefitPlanRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -496,7 +514,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
+				return dfsg.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -512,7 +530,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAssociatedMembers(associatedMemberRequest); 
+				return dfsg.GetAssociatedMembers(associatedMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -528,7 +546,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetProfileSummary(profileSummaryRequest); 
+				return dfsg.GetProfileSummary(profileSummaryRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -544,7 +562,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPrimaryEnrollment(primaryEnrollmentRequest); 
+				return dfsg.GetPrimaryEnrollment(primaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -560,7 +578,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
+				return dfsg.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -576,7 +594,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetCOBDetails(cobDetailsRequest); 
+				return dfsg.GetCOBDetails(cobDetailsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -592,7 +610,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetEnrollPlanActions(enrollPlanActionsRequest); 
+				return dfsg.GetEnrollPlanActions(enrollPlanActionsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -608,7 +626,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.SearchMember(searchMemberRequest); 
+				return dfsg.SearchMember(searchMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -624,7 +642,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
+				return dfsg.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -640,7 +658,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
+				return dfsg.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -656,7 +674,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetResendStatus(resendStatusRequest); 
+				return dfsg.GetResendStatus(resendStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -672,7 +690,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberInvoice(request); 
+				return dfsg.GetMemberInvoice(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -688,7 +706,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetClaimExplanationOfBenefits(request); 
+				return dfsg.GetClaimExplanationOfBenefits(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -704,7 +722,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
+				return dfsg.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -720,7 +738,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetClaimDetails(claimServiceRequest); 
+				return dfsg.GetClaimDetails(claimServiceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -736,7 +754,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberAuthorization(memberRequest); 
+				return dfsg.GetMemberAuthorization(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -752,7 +770,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberEnrollment(memberRequest); 
+				return dfsg.GetMemberEnrollment(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -768,7 +786,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberEnrollment(memberRequest, testing); 
+				return dfsg.GetMemberEnrollment(memberRequest, testing); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -784,7 +802,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberPcp(memberRequest); 
+				return dfsg.GetMemberPcp(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -800,7 +818,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemo(memberRequest); 
+				return dfsg.GetMemberMemo(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -816,7 +834,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberClaims(memberRequest); 
+				return dfsg.GetMemberClaims(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -832,7 +850,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
+				return dfsg.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -848,7 +866,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetEnrollRestriction(enrollRequest); 
+				return dfsg.GetEnrollRestriction(enrollRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -864,7 +882,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetRateCode(memberRateRequest); 
+				return dfsg.GetRateCode(memberRateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -880,7 +898,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAttribute(memberAttributeRequest); 
+				return dfsg.GetAttribute(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -896,7 +914,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPlanAction(memberRequest); 
+				return dfsg.GetPlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -912,7 +930,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.DeletePlanAction(memberRequest); 
+				return dfsg.DeletePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -928,7 +946,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.CreatePlanAction(memberRequest); 
+				return dfsg.CreatePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -944,7 +962,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemoAlertIndicator(memberRequest); 
+				return dfsg.GetMemberMemoAlertIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -960,7 +978,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemoHedisIndicator(memberRequest); 
+				return dfsg.GetMemberMemoHedisIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -976,7 +994,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberPrimaryPCP(memberRequest); 
+				return dfsg.GetMemberPrimaryPCP(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -992,7 +1010,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberProfileSummary(memberRequest); 
+				return dfsg.GetMemberProfileSummary(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1008,7 +1026,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberAgencyName(AgencyNameRequest); 
+				return dfsg.GetMemberAgencyName(AgencyNameRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1024,7 +1042,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberShareOfCost(costRequest); 
+				return dfsg.GetMemberShareOfCost(costRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1040,7 +1058,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberBasicUMDetails(UMDocRequest); 
+				return dfsg.GetMemberBasicUMDetails(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1056,7 +1074,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetUMDiagsAndServices(UMDocRequest); 
+				return dfsg.GetUMDiagsAndServices(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1072,7 +1090,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetUMAttributes(memberAttributeRequest); 
+				return dfsg.GetUMAttributes(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1088,7 +1106,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetHedisAlert(memberRequest); 
+				return dfsg.GetHedisAlert(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1104,7 +1122,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetIdCardCompletionDate(memberRequest); 
+				return dfsg.GetIdCardCompletionDate(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1120,7 +1138,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetHistoricalAddress(HistoricalAddressRequest); 
+				return dfsg.GetHistoricalAddress(HistoricalAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1136,7 +1154,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMarketplaceDetail(MarketPlaceRequest); 
+				return dfsg.GetMarketplaceDetail(MarketPlaceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1152,7 +1170,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAccountStatus(AccountStatusRequest); 
+				return dfsg.GetAccountStatus(AccountStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1168,7 +1186,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetBenefitPlan(benefitPlanRequest); 
+				return dfsg.GetBenefitPlan(benefitPlanRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1184,7 +1202,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
+				return dfsg.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1200,7 +1218,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAssociatedMembers(associatedMemberRequest); 
+				return dfsg.GetAssociatedMembers(associatedMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1216,7 +1234,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetProfileSummary(profileSummaryRequest); 
+				return dfsg.GetProfileSummary(profileSummaryRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1232,7 +1250,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPrimaryEnrollment(primaryEnrollmentRequest); 
+				return dfsg.GetPrimaryEnrollment(primaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1248,7 +1266,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
+				return dfsg.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1264,7 +1282,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetCOBDetails(cobDetailsRequest); 
+				return dfsg.GetCOBDetails(cobDetailsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1280,7 +1298,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetEnrollPlanActions(enrollPlanActionsRequest); 
+				return dfsg.GetEnrollPlanActions(enrollPlanActionsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1296,7 +1314,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.SearchMember(searchMemberRequest); 
+				return dfsg.SearchMember(searchMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1312,7 +1330,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
+				return dfsg.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1328,7 +1346,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
+				return dfsg.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1344,7 +1362,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetResendStatus(resendStatusRequest); 
+				return dfsg.GetResendStatus(resendStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1360,7 +1378,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberInvoice(request); 
+				return dfsg.GetMemberInvoice(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1376,7 +1394,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetClaimExplanationOfBenefits(request); 
+				return dfsg.GetClaimExplanationOfBenefits(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1392,7 +1410,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
+				return dfsg.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1408,7 +1426,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetClaimDetails(claimServiceRequest); 
+				return dfsg.GetClaimDetails(claimServiceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1424,7 +1442,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberAuthorization(memberRequest); 
+				return dfsg.GetMemberAuthorization(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1440,7 +1458,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberEnrollment(memberRequest); 
+				return dfsg.GetMemberEnrollment(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1456,7 +1474,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberPcp(memberRequest); 
+				return dfsg.GetMemberPcp(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1472,7 +1490,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemo(memberRequest); 
+				return dfsg.GetMemberMemo(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1488,7 +1506,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberClaims(memberRequest); 
+				return dfsg.GetMemberClaims(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1504,7 +1522,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
+				return dfsg.UpdateQNXTMailingAddress(memberQNXTMailingAddrUpdateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1520,7 +1538,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetEnrollRestriction(enrollRequest); 
+				return dfsg.GetEnrollRestriction(enrollRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1536,7 +1554,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetRateCode(memberRateRequest); 
+				return dfsg.GetRateCode(memberRateRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1552,7 +1570,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAttribute(memberAttributeRequest); 
+				return dfsg.GetAttribute(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1568,7 +1586,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPlanAction(memberRequest); 
+				return dfsg.GetPlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1584,7 +1602,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.DeletePlanAction(memberRequest); 
+				return dfsg.DeletePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1600,7 +1618,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.CreatePlanAction(memberRequest); 
+				return dfsg.CreatePlanAction(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1616,7 +1634,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemoAlertIndicator(memberRequest); 
+				return dfsg.GetMemberMemoAlertIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1632,7 +1650,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberMemoHedisIndicator(memberRequest); 
+				return dfsg.GetMemberMemoHedisIndicator(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1648,7 +1666,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberPrimaryPCP(memberRequest); 
+				return dfsg.GetMemberPrimaryPCP(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1664,7 +1682,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberProfileSummary(memberRequest); 
+				return dfsg.GetMemberProfileSummary(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1680,7 +1698,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberAgencyName(AgencyNameRequest); 
+				return dfsg.GetMemberAgencyName(AgencyNameRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1696,7 +1714,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberShareOfCost(costRequest); 
+				return dfsg.GetMemberShareOfCost(costRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1712,7 +1730,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberBasicUMDetails(UMDocRequest); 
+				return dfsg.GetMemberBasicUMDetails(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1728,7 +1746,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetUMDiagsAndServices(UMDocRequest); 
+				return dfsg.GetUMDiagsAndServices(UMDocRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1744,7 +1762,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetUMAttributes(memberAttributeRequest); 
+				return dfsg.GetUMAttributes(memberAttributeRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1760,7 +1778,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetHedisAlert(memberRequest); 
+				return dfsg.GetHedisAlert(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1776,7 +1794,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetIdCardCompletionDate(memberRequest); 
+				return dfsg.GetIdCardCompletionDate(memberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1792,7 +1810,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetHistoricalAddress(HistoricalAddressRequest); 
+				return dfsg.GetHistoricalAddress(HistoricalAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1808,7 +1826,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMarketplaceDetail(MarketPlaceRequest); 
+				return dfsg.GetMarketplaceDetail(MarketPlaceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1824,7 +1842,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAccountStatus(AccountStatusRequest); 
+				return dfsg.GetAccountStatus(AccountStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1840,7 +1858,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetBenefitPlan(benefitPlanRequest); 
+				return dfsg.GetBenefitPlan(benefitPlanRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1856,7 +1874,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
+				return dfsg.GetBenefitPlanAccumulation(benefitPlanAccumulationRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1872,7 +1890,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetAssociatedMembers(associatedMemberRequest); 
+				return dfsg.GetAssociatedMembers(associatedMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1888,7 +1906,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetProfileSummary(profileSummaryRequest); 
+				return dfsg.GetProfileSummary(profileSummaryRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1904,7 +1922,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPrimaryEnrollment(primaryEnrollmentRequest); 
+				return dfsg.GetPrimaryEnrollment(primaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1920,7 +1938,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
+				return dfsg.GetSecondaryEnrollment(SecondaryEnrollmentRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1936,7 +1954,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetCOBDetails(cobDetailsRequest); 
+				return dfsg.GetCOBDetails(cobDetailsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1952,7 +1970,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetEnrollPlanActions(enrollPlanActionsRequest); 
+				return dfsg.GetEnrollPlanActions(enrollPlanActionsRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1968,7 +1986,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.SearchMember(searchMemberRequest); 
+				return dfsg.SearchMember(searchMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -1984,7 +2002,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
+				return dfsg.SearchPreEnrolledMember(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -2000,7 +2018,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
+				return dfsg.GetPreEnrolledMemberDetail(searchPreEnrolledMemberRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -2016,7 +2034,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetResendStatus(resendStatusRequest); 
+				return dfsg.GetResendStatus(resendStatusRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -2032,7 +2050,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetMemberInvoice(request); 
+				return dfsg.GetMemberInvoice(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -2048,7 +2066,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetClaimExplanationOfBenefits(request); 
+				return dfsg.GetClaimExplanationOfBenefits(request); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -2064,7 +2082,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
+				return dfsg.GetResponsiblePartyAddress(responsiblePartyAddressRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
@@ -2080,7 +2098,7 @@ namespace dsf
  
 			try 
 			{  
-				return dsffd.GetClaimDetails(claimServiceRequest); 
+				return dfsg.GetClaimDetails(claimServiceRequest); 
 			} catch (Exception ex)
 			 {
 				 throw ex;
